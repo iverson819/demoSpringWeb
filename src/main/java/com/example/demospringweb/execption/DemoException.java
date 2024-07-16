@@ -13,7 +13,6 @@ public class DemoException extends Exception {
         this.code = returnCodeEnum.getCode();
         this.desc = returnCodeEnum.getDesc();
     }
-
     public DemoException(String code, String desc) {
         super(desc);
         this.code = code;

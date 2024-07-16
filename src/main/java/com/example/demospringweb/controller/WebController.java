@@ -25,7 +25,6 @@ public class WebController {
 
     @RequestMapping(value = "hello", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
     public Response<RespBody> hello(@Validated @RequestBody Request<Reqbody> request, Errors errors) throws DemoException {
-
         Response<RespBody> result = new Response<>();
         RespBody respBody = new RespBody();
         WebHeader header = request.getWebHeader();
